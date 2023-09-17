@@ -1,3 +1,7 @@
+import ourl from "../assets/omnifood.jpg";
+import furl from "../assets/furniture.jpg";
+import purl from "../assets/portfolio.jpg";
+
 const ProjectSec = ({ project }) => {
   return (
     <div>
@@ -32,23 +36,11 @@ export default function Project() {
       </section>
       <section className="grid items-center justify-between grid-cols-2 gap-x-48 gap-y-12 ">
         <ProjectSec project={projects[0]} />
-        <img
-          src="src/assets/omnifood.jpg"
-          alt="woman eating food"
-          className="project-img"
-        />
-        <img
-          src="src/assets/furniture.jpg"
-          alt="chairs"
-          className="project-img"
-        />
+        <img src={ourl} alt="woman eating food" className="project-img" />
+        <img src={furl} alt="chairs" className="project-img" />
         <ProjectSec project={projects[1]} />
         <ProjectSec project={projects[2]} />
-        <img
-          src="src/assets/portfolio.jpg"
-          alt="user description"
-          className="project-img"
-        />
+        <img src={purl} alt="user description" className="project-img" />
       </section>
     </div>
   );
@@ -57,7 +49,7 @@ export default function Project() {
 const projects = [
   {
     title: "Omnifood",
-    link: "https://omnifood-phurba.netlify.app/",
+    link: "https://ps-omnifood.netlify.app/",
     desc: "",
     languages: ["html", "css", "java script"],
   },
@@ -69,7 +61,7 @@ const projects = [
   },
   {
     title: "portfolio",
-    link: "#",
+    link: "https://phurbasherpa.netlify.app",
     desc: "",
     languages: ["react js", "tailwind css", "vite"],
   },
