@@ -1,5 +1,3 @@
-// import { Facebook, Linkedin, Mail, Instagram } from "react-feather";
-
 export default function Footer() {
   return (
     <div className="text-xl h-[10rem] flex justify-between items-center px-12 text-grayscale-300">
@@ -11,8 +9,6 @@ export default function Footer() {
           Loosely designed in Figma and coded in Visual Studio Code by yours
           truly
         </p>
-        {/* <p>yours truly. Built with React.js and Tailwind CSS, deployed with</p>
-        <p>Vercel. All text is set in the Inter typeface.</p> */}
       </div>
     </div>
   );

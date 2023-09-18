@@ -30,6 +30,14 @@
     border-b-4 border-transparent hover:border-logo-col;
   }
 
+  .certified {
+    @apply absolute top-8  -right-8
+  text-grayscale-500 text-lg w-40 h-8
+  tracking-widest bg-[#ffd43b] content-['certified'] 
+  text-center font-bold uppercase
+  py-[1px]
+  rotate-45;
+  }
   /* ------------- */
   /* EXPERIENCE */
   /* ------------- */
