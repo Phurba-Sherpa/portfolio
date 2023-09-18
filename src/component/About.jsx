@@ -1,3 +1,4 @@
+import cs50url from "../assets/cs50x.jpg";
 export default function About() {
   return (
     <div className="container h-full" id="about">
@@ -63,6 +64,33 @@ export default function About() {
                 <li>java script</li>
                 <li>sql</li>
               </ul>
+            </div>
+            <div>
+              <h3 className="mb-8 font-medium">
+                achievements / certifications
+              </h3>
+              <div className="flex items-center text-lg normal-case gap-x-8 text-grayscale-400">
+                <a
+                  href="https://certificates.cs50.io/8d1333d5-d0bf-489d-b4fc-d01ad85ac979"
+                  className=""
+                >
+                  <img
+                    src={cs50url}
+                    alt="cs50x"
+                    className="w-[16.5rem] h-[8.2rem] shadow-sm hover:scale-105 transition-all duration-300"
+                  />
+                </a>
+                <div>
+                  <a
+                    href="https://certificates.cs50.io/8d1333d5-d0bf-489d-b4fc-d01ad85ac979"
+                    className="block mb-4 text-xl font-medium transition-all duration-300 text-grayscale-500 hover:text-black"
+                  >
+                    Harvard University: CS50's Introduction to Computer Science
+                  </a>
+                  <p>Issuer: HarvardX</p>
+                  <p>Issued at: 18 September, 2023</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

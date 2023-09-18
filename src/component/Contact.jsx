@@ -90,6 +90,8 @@ const socialLinks = [
 ];
 
 const facts = [
-  "Loosely designed in Figma and coded in Visual Studio Code by yours truly. Built with React.js and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface.",
+  "Loosely designed in Figma and coded in Visual Studio Code by yours truly. Built with React.js and Tailwind CSS, deployed with Netlify. All text is set in the Inter typeface.",
   "I met with a coding in grade IX. It was in JAVA. We used BlueJ for compliation.",
+  "A passionate, flexible fullstack developer. Loves chanllenges and is always eager to dig into the new technologies.",
+  "Completed CS50x: CS50's introduction to Computer Science, got certified by Harvardx. Lessong learned: Power of C, breaking complex problem into smaller chunks, thinking like a programmer. how HLL works behind the scenes.",
 ];
