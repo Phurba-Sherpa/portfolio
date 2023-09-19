@@ -78,7 +78,7 @@
   }
 
   .project-desc {
-    @apply text-grayscale-300 text-2xl;
+    @apply text-grayscale-300 text-[1.3rem];
   }
 
   .proj-tag {
