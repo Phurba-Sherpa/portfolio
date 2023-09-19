@@ -1,5 +1,4 @@
 # Phurba Sherpa - Software Developer
-### Video demo: https://youtu.be/ZbvxtQoc1no
 ### Description: 
 Hello everyone, this is a **personal website** completed on 17 September 2023, A website to show case the project that you have work on so far, so that other can see your update. Design of this project has been inspired from multiple others portfolios.
 
