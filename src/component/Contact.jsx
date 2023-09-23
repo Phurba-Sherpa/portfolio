@@ -4,8 +4,8 @@ import * as Icons from "react-feather";
 const SocialLogo = ({ data }) => {
   const Icon = Icons[data.icon];
   return (
-    <div className="text-xl text-grayscale-300">
-      <a href={data.url} className="w-auto">
+    <div className="text-xl text-grayscale-300 social-link">
+      <a href={data.url} className="">
         <Icon size={16} />
         <p>{data.label}</p>
       </a>
@@ -23,18 +23,20 @@ export default function Contact() {
 
   return (
     <div
-      className="container flex h-[80vh] border-b-4 border-grayscale-300/10"
+      className="container flex h-[80vh] border-b-2 border-grayscale-300/10"
       id="contact"
     >
-      <section className="flex mt-auto gap-x-52">
-        <div className="basis-1/2">
-          <h2 className="text-[3.2rem] mb-12">Let's work together</h2>
-          <p className="text-2xl text-grayscale-300">
+      <section className="lg:flex items-center lg:mt-auto xl:gap-x-[9.6rem] lg:px-2 mt-16 lg:gap-x-[6rem]">
+        <div className=" basis-1/2">
+          <h2 className="xl:text-[3.2rem] lg:text-[3.2rem] lg:mb-0 mb-12 text-[2.4rem]">
+            Let's work together
+          </h2>
+          <p className="text-xl xl:mt-8 xl:text-2xl text-grayscale-300">
             If you wanna get in touch, talk to me about a project collaboration
             or just say hi, send an email to phurba1404@gmail.com and ~let's
             talk.
           </p>
-          <div className="flex gap-x-4 social-link">
+          <div className="grid grid-cols-3 gap-4 mt-6 xl:mt-16 xl:grid-cols-5">
             <SocialLogo data={socialLinks[0]} />
             <SocialLogo data={socialLinks[1]} />
             <SocialLogo data={socialLinks[2]} />
@@ -42,7 +44,7 @@ export default function Contact() {
             <SocialLogo data={socialLinks[4]} />
           </div>
         </div>
-        <div className="basis-1/2">
+        <div className="mt-20 basis-1/2 lg:mt-0">
           <div className="">
             <blockquote className="fact-text">{facts[state]}</blockquote>
           </div>

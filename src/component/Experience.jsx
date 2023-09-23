@@ -23,15 +23,15 @@ const ExpComp = ({ experience }) => {
 
 export default function Experience() {
   return (
-    <section className="container h-full" id="experience">
-      <div className="mb-24 text-center">
+    <section className="container h-full pt-20" id="experience">
+      <div className="mb-12 text-center lg:mb-24">
         <h1 className="main-head">Experience</h1>
         <p className="text-xl">
           Here you will find more information about time line of professional
           experiences with industry till today.
         </p>
       </div>
-      <div className="grid pl-20 border-l-4 gap-y-8 border-logo-col">
+      <div className="grid pl-8 border-l-4 lg:pl-20 gap-y-8 border-logo-col">
         <ExpComp experience={experiences[0]} />
         <ExpComp experience={experiences[1]} />
         <ExpComp experience={experiences[2]} />

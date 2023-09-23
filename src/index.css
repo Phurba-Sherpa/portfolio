@@ -3,127 +3,168 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 }
 
 @layer components {
-  /* ------------- */
-  /* GAENERAL */
-  /* ------------- */
-  .main-head {
-    @apply uppercase text-[3.2rem];
-  }
-  .nav-link {
-    @apply pb-3 transition duration-300 
+    /* ------------- */
+    /* GAENERAL */
+    /* ------------- */
+    .container {
+        @apply xl:px-[9.6rem] xl:pb-[9.6rem] mx-auto max-w-[150rem] sm:px-[6rem] sm:pb-[6rem] p-8;
+    }
+    .main-head {
+        @apply uppercase text-[3rem];
+    }
+    .nav-link {
+        @apply pb-3 transition duration-300 
     border-b-4 border-transparent hover:border-logo-col;
-  }
+    }
 
-  .certified {
-    @apply absolute top-8  -right-8
+    .certified {
+        @apply absolute top-8  -right-8
   text-grayscale-500 text-lg w-40 h-8
   tracking-widest bg-[#ffd43b] content-['certified'] 
   text-center font-bold uppercase
   py-[1px]
   rotate-45;
-  }
-  /* ------------- */
-  /* EXPERIENCE */
-  /* ------------- */
+    }
 
-  .dot {
-    @apply absolute -translate-x-[9.3rem] top-0
+    /* ------------- */
+    /* INTRO */
+    /* ------------- */
+    .intro-head {
+        @apply 2xl:text-[4rem] 2xl:leading-[6.4rem]
+    font-normal xl:text-[3.6rem] xl:leading-[5rem] 
+    lg:text-[3rem] lg:leading-[4.4rem] xl:mb-12 sm:mb-12 text-[3rem];
+    }
+
+    .intro-desc {
+        @apply xl:text-2xl 2xl:text-[1.6rem] lg:text-lg text-[1.4rem];
+    }
+
+    .main-nav {
+        @apply transition-all duration-500 pointer-events-none invisible;
+    }
+    .nav-open .main-nav {
+        @apply opacity-100 pointer-events-auto visible;
+    }
+
+    /* ------------- */
+    /* ABOUT */
+    /* ------------- */
+    .about-desc {
+        @apply flex flex-col 2xl:text-2xl 
+    gap-y-8 xl:text-[1.4rem] lg:text-xl text-lg;
+    }
+
+    .about-frontend {
+        @apply;
+    }
+    .skills li {
+        @apply lg:py-4 lg:px-8 bg-[#d6dbdb] py-2 text-center text-xs xl:text-lg;
+    }
+
+    /* ------------- */
+    /* EXPERIENCE */
+    /* ------------- */
+    .dot {
+        @apply absolute -translate-x-[9.3rem] top-0
     bg-logo-col
     h-8 w-8
     rounded-full;
-  }
+    }
 
-  .exp {
-    @apply shadow-lg bg-tertiary relative px-12 pt-3 pb-12 border before:dot hover:-translate-y-2;
-  }
-  .exp-date {
-    @apply text-logo-col text-xl
+    .exp {
+        @apply shadow-lg bg-tertiary relative
+     px-12 pt-3 pb-12 border before:dot hover:-translate-y-2;
+    }
+    .exp-date {
+        @apply text-logo-col lg:text-xl text-base
     font-semibold;
-  }
-  .exp-head {
-    @apply font-semibold;
-  }
+    }
+    .exp-head {
+        @apply font-semibold;
+    }
 
-  .exp-tag {
-    @apply bg-logo-col/10 py-2 px-8 text-base uppercase mt-2;
-  }
-  .exp-desc {
-    @apply text-xl mt-10;
-  }
-  /* ------------- */
-  /* PROJECT */
-  /* ------------- */
-  .project-img {
-    @apply w-[47.5rem] shadow-md hover:scale-110 overflow-hidden transition-all duration-300;
-  }
+    .exp-tag {
+        @apply bg-logo-col/10 lg:py-2 lg:px-8 lg:text-base uppercase mt-2 py-1 px-4 text-xs;
+    }
+    .exp-desc {
+        @apply lg:text-xl lg:mt-10 text-base;
+    }
+    /* ------------- */
+    /* PROJECT */
+    /* ------------- */
+    .project-img {
+        @apply lg:w-[47.5rem] shadow-md hover:scale-110 md:w-[31.6rem] 
+    overflow-hidden transition-all duration-300;
+    }
 
-  .project-title {
-    @apply uppercase font-normal mb-4 inline-block hover:text-logo-col transition-all duration-300;
-  }
+    .project-title {
+        @apply uppercase font-normal mb-4 inline-block
+     hover:text-logo-col transition-all duration-300;
+    }
 
-  .project-desc {
-    @apply text-grayscale-300 text-[1.3rem];
-  }
+    .project-desc {
+        @apply text-grayscale-300 lg:text-[1.3rem] text-base;
+    }
 
-  .proj-tag {
-    @apply bg-logo-col/10 py-2 px-8 text-base uppercase mt-2;
-  }
-  /* ------------- */
-  /* CONTACT */
-  /* ------------- */
-  .social-link a {
-    @apply flex gap-x-1 bg-tertiary font-medium py-3 px-8 mt-12;
-  }
+    .proj-tag {
+        @apply bg-logo-col/10 lg:py-2 lg:px-8 py-1 px-4
+     lg:text-base uppercase mt-2 text-sm;
+    }
+    /* ------------- */
+    /* CONTACT */
+    /* ------------- */
+    .social-link a {
+        @apply flex gap-x-1 bg-tertiary 
+    font-medium xl:py-3 xl:px-8 md:py-1 md:px-4 justify-center;
+    }
 
-  .stripe1 {
-    @apply absolute top-0 -left-10 skew-x-[24deg] block
+    .stripe1 {
+        @apply absolute top-0 -left-10 skew-x-[24deg] block
     h-8 w-3 bg-grayscale-300;
-  }
-  .stripe2 {
-    @apply absolute top-0 -left-16 skew-x-[24deg] block
+    }
+    .stripe2 {
+        @apply absolute top-0 -left-16 skew-x-[24deg] block
     h-8 w-3 bg-grayscale-300;
-  }
+    }
 
-  .fact-text {
-    @apply relative pb-12 text-2xl leading-10 border-grayscale-300/30 
+    .fact-text {
+        @apply relative pb-12 lg:text-2xl lg:leading-10 border-grayscale-300/30 
     border-b-[3px] before:stripe1 after:stripe2 text-grayscale-300 
-    transition-all duration-500 h-[100px];
-  }
+    transition-all duration-500 h-[100px] text-base leading-6;
+    }
 }
 
 body {
-  font-size: 1.6rem;
-  background-color: #e6e3e2;
-  color: #333;
+    font-size: 1.6rem;
+    background-color: #e6e3e2;
+    color: #333;
 }
 
 img {
-  max-width: 100%;
-  height: 100%;
-  background-size: "contain";
+    max-width: 100%;
+    height: 100%;
+    background-size: "contain";
 }
 
-.container {
-  padding: 9.6rem 9.6rem;
-}
-
-.skills li {
-  padding: 1rem 2rem;
-  background-color: #d6dbdb;
-}
+/* .container {
+  /* 1140px */
+/* max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+} */

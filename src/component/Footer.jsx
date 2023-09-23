@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="text-xl h-[10rem] flex justify-between items-center px-12 text-grayscale-300">
+    <div className="lg:text-xl h-[10rem] flex justify-between items-center px-12 text-grayscale-300 text-sm">
       <div className="basis-1/2">
         <p>Copyright &copy; Phurba Sherpa 2023</p>
       </div>
