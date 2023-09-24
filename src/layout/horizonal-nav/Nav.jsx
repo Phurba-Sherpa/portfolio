@@ -1,37 +1,60 @@
+import { useState } from "react"
+import { Menu, X } from "react-feather"
+
 const Nav = () => {
-  return (
-    <nav className="flex items-center justify-between p-16 h-[80px] w-full fixed bg-primary z-10">
-      <div className="flex items-center gap-4">
-        <a href="#home" className="p-4 font-medium bg-logo-col text-primary">
-          PS
-        </a>
-        <p className="font-semibold uppercase text-grayscale-400">
-          Phurba Sherpa
-        </p>
-      </div>
-      <ul className="flex uppercase gap-x-16 text-grayscale-500">
-        <li>
-          <a href="#about" className="nav-link">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#experience" className="nav-link">
-            Experience
-          </a>
-        </li>
-        <li>
-          <a href="#project" className="nav-link">
-            Project
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="nav-link">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
-  );
-};
-export default Nav;
+    const [menuOpen, setMenuOpen] = useState(false)
+    const navOpenClass = menuOpen ? "header nav-open" : "header"
+    return (
+        <header className={navOpenClass}>
+            <div className="flex items-center space-x-4 text-base md:text-2xl">
+                <a href="#home" className="logo">
+                    PS
+                </a>
+                <p className="font-semibold uppercase text-grayscale-400 whitespace-nowrap">
+                    Phurba Sherpa
+                </p>
+            </div>
+            <nav className="main-nav">
+                <ul className="nav-list">
+                    {navList.map((nav) => (
+                        <li key={nav.name}>
+                            <a href={nav.url} className="nav-link">
+                                {nav.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+            <button
+                className="btn-mob-nav"
+                onClick={() => setMenuOpen((prev) => !prev)}
+            >
+                {menuOpen ? (
+                    <X className="icon-mob-nav" />
+                ) : (
+                    <Menu className="icon-mob-nav" />
+                )}
+            </button>
+        </header>
+    )
+}
+
+const navList = [
+    {
+        name: "about",
+        url: "#about",
+    },
+    {
+        name: "experience",
+        url: "#experience",
+    },
+    {
+        name: "project",
+        url: "#project",
+    },
+    {
+        name: "contact",
+        url: "#contact",
+    },
+]
+export default Nav

@@ -9,7 +9,7 @@ import Contact from "./component/Contact";
 function App() {
   return (
     <>
-      <header className="flex flex-col h-screen" id="home">
+      <header className="flex flex-col lg:h-screen" id="home">
         <Nav />
         <Header />
       </header>
