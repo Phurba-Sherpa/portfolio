@@ -44,7 +44,7 @@ img {
     }
 
     .main-head {
-        @apply uppercase md:text-5xl text-4xl mb-0;
+        @apply uppercase md:text-5xl text-4xl mb-3;
     }
 
     .nav-link {
