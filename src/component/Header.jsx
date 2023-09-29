@@ -1,3 +1,5 @@
+import resumeUrl from '../assets/resume.pdf'
+
 export default function Header() {
     return (
         <div className="container sm:flex lg:gap-24 !py-16 lg:mt-auto mt-48">
@@ -19,7 +21,7 @@ export default function Header() {
                     >
                         phurba1404@gmail.com
                     </a>
-                    <a href="src/assets/resume.pdf" download='phurba-resume' target="_blank" className="px-10 lg:px-14 py-6 transition duration-300 bg-gray-50 hover:bg-primary hover:shadow-[inset_0_0_0_3px_#fff]">View resume</a>
+                    <a href={resumeUrl} download='phurba-resume' className="px-10 lg:px-14 py-6 transition duration-300 bg-gray-50 hover:bg-primary hover:shadow-[inset_0_0_0_3px_#fff]">View resume</a>
                 </div>
             </section>
             <section className="lg:basis-1/2 basis-1/4"></section>
