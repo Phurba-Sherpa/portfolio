@@ -19,7 +19,7 @@ export default function Header() {
                     >
                         phurba1404@gmail.com
                     </a>
-                    <a href="src/assets/resume.pdf" download='phurba-resume' target="_blank" className="px-10 lg:px-14 py-6 transition duration-300 bg-gray-50 hover:bg-primary hover:shadow-[inset_0_0_0_3px_#fff]">View resume</a>
+                    <a href="src/assets/resume.pdf" download='phurba-resume.pdf' target="_blank" className="px-10 lg:px-14 py-6 transition duration-300 bg-gray-50 hover:bg-primary hover:shadow-[inset_0_0_0_3px_#fff]">View resume</a>
                 </div>
             </section>
             <section className="lg:basis-1/2 basis-1/4"></section>
