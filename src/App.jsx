@@ -13,7 +13,7 @@ function App() {
         <Nav />
         <Header />
       </header>
-      <main>
+      <main className="mt-0 lg:mt-32">
         <About />
         <Experience />
         <Project />
