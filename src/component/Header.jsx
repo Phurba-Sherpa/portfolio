@@ -17,7 +17,7 @@ export default function Header() {
                 <div className="flex mt-12 text-2xl xl:mt-20 gap-x-4 lg:text-2xl xl:text-3xl">
                     <a
                         href="mailto:phurba1404@gmail.com"
-                        className=" inline-block py-6 align-middle text-center transition duration-300  bg-[#b8b4b3] px-10 lg:px-14 text-grayscale-500 hover:bg-secondary-500"
+                        className="inline-block px-10 py-6 text-center align-middle transition duration-300  bg-secondary lg:px-14 text-grayscale-500 hover:bg-[#b8b4b3]"
                     >
                         phurba1404@gmail.com
                     </a>
