@@ -37,7 +37,7 @@ export default function About() {
                     </div>
                     <a
                         href="mailto:phurba1404@gmail.com"
-                        className="inline-block py-6 lg:mt-20 font-medium transition duration-300 text-xl bg-secondary px-14 text-grayscale-500 hover:bg-secondary-500 lg:text-[1.6rem] mt-8"
+                        className="inline-block py-6 lg:mt-20 font-medium transition duration-300 text-xl bg-secondary px-14 text-grayscale-500 hover:bg-[#b8b4b3] lg:text-[1.6rem] mt-8"
                     >
                         Contact Me
                     </a>
